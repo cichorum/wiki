@@ -1,9 +1,11 @@
 ---
+created: 2026-01-28T16:17:27-05:00
+modified: 2026-01-28T16:49:23-05:00
 date created: 2026-01-28 16:17:27
 date modified: 2026-01-28 16:31:09
 title: Project Introduction
 ---
-## A Node/Network document system with Web access and automatic incremental update of an available LLM system
+## A Node/Network Document System with Web Access and Automatic Incremental Update of an Available LLM System
 
 ### Client
 **Name:** John B. Smith (UNC Computer Science, emmeritus)  
