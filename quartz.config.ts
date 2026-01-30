@@ -23,32 +23,32 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        header: "Open Sans",
+        body: "Source Serif",
         code: "IBM Plex Mono",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#FFFFFF",        // White background
+          lightgray: "#f8f9fa",    // Very soft gray for subtle borders
+          gray: "#4B9CD3",         // Carolina Blue (used for accents/ui)
+          darkgray: "#13294B",     // Navy (primary text)
+          dark: "#151515",         // Deep Black
+          secondary: "#13294B",    // Navy
+          tertiary: "#4B9CD3",     // Carolina Blue
+          highlight: "rgba(75, 156, 211, 0.15)", // Translucent Carolina Blue
+          textHighlight: "#4B9CD344",             // Soft blue highlight
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#151515",        // Deep Black background
+          lightgray: "#13294B",    // Navy for surfaces/cards
+          gray: "#4B9CD3",         // Carolina Blue
+          darkgray: "#FFFFFF",     // White (primary text)
+          dark: "#fafafa",         // Near white
+          secondary: "#4B9CD3",    // Carolina Blue
+          tertiary: "#7BAFD4",     // A slightly lighter tint of Carolina Blue for visibility
+          highlight: "rgba(75, 156, 211, 0.2)",  // Blue highlight
+          textHighlight: "#13294B88",             // Navy highlight
         },
       },
     },
