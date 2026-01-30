@@ -1,3 +1,5 @@
 {
-  "newLinkFormat": "absolute"
+  "newLinkFormat": "absolute",
+  "showInlineTitle": false,
+  "showUnsupportedFiles": true
 }
