@@ -24,6 +24,12 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
+
+    // TEAM MEMBERS GRID COMPONENT IMPLEMENTATION
+    Component.ConditionalRender({
+      component: Component.TeamMembersGrid(),
+      condition: (page) => page.fileData.slug === "team",
+    }),
   ],
   left: [
     Component.PageTitle(),
