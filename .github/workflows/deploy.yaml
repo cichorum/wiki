@@ -3,7 +3,7 @@ name: Deploy Quartz site to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - '**'
  
 permissions:
   contents: read
@@ -11,8 +11,8 @@ permissions:
   id-token: write
  
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: ${{ github.ref == 'refs/heads/main' && 'pages' || format('pages-{0}', github.ref) }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
  
 jobs:
   build:
@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetch all history for git info
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -28,16 +28,27 @@ jobs:
         run: npm ci
       - name: Build Quartz
         run: npx quartz build
+        env:
+          QUARTZ_BASE_PATH: ${{ github.ref == 'refs/heads/main' && '' || format('/preview/{0}', github.ref_name) }}
+      - name: Prepare deployment directory
+        run: |
+          if [ "${{ github.ref }}" == "refs/heads/main" ]; then
+            mkdir -p deploy-build
+            cp -r public/* deploy-build/
+          else
+            mkdir -p deploy-build/preview/${{ github.ref_name }}
+            cp -r public/* deploy-build/preview/${{ github.ref_name }}/
+          fi
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public
+          path: deploy-build
  
   deploy:
     needs: build
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ github.ref == 'refs/heads/main' && steps.deployment.outputs.page_url || format('{0}preview/{1}/', steps.deployment.outputs.page_url, github.ref_name) }}
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
