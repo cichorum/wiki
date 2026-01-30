@@ -9,7 +9,7 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/cichorum",
-      "COMP 523, Spring 25": "https://www.cs.unc.edu/~stotts/COMP523-s26/",
+      "COMP 523, Spring '26": "https://www.cs.unc.edu/~stotts/COMP523-s26/",
     },
   }),
 }
