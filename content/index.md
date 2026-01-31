@@ -1,7 +1,5 @@
 ---
-date created: 2026-01-28 10:36:40
-date modified: 2026-01-28 16:18:08
-title: index
+title: Welcome to Quartz
 ---
 
 This is a blank Quartz installation.
