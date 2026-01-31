@@ -10,7 +10,7 @@ export default (() => {
                     <img class="profile" src="https://media.licdn.com/dms/image/v2/D4E03AQGOsMtezdkHQQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728526922914?e=1771459200&v=beta&t=WZy0SEK__BV-tPGqH0UG2fJ0DMneZqu55HOcH2YFOM8" alt="Team Member"/>
                     <div class="team-info">
                         <h3>Oluwatumininu (Tumi) Oguntola</h3>
-                        <p><strong>Role:</strong> Oracle of The Infinite (Technical Architect)</p>
+                        <p><strong>Role:</strong> Oracle of the Infinite (Technical Architect)</p>
                         <p><strong>Email:</strong> oguntola@unc.edu</p>
                         <div class="social-links">
                             <a href="https://www.linkedin.com/in/tumio/" target="_blank">
@@ -61,7 +61,7 @@ export default (() => {
                     <img class="profile" src="https://avatars.githubusercontent.com/u/144399345?v=4" alt="Team Member"/>
                     <div class="team-info">
                         <h3>Christopher Roberts</h3>
-                        <p><strong>Role:</strong> Custodian of Innovation (Solutions Engineer)</p>
+                        <p><strong>Role:</strong> Agent of Innovation (Solutions Engineer)</p>
                         <p><strong>Email:</strong> csrob@unc.edu</p>
                         <div class="social-links">
                             <a href="https://github.com/tophersroberts" target="_blank">
