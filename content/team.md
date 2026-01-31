@@ -14,7 +14,7 @@ HTML Team Grid Implemented Via:
 
 ## The Client
 
-**Name:** John B. Smith (UNC Computer Science, emmeritus)
+**Name:** John B. Smith (UNC Computer Science, Professor Emeritus)
 **Email:** jbs@cs.unc.edu
 **Link:** [https://chicorylane.com/](https://chicorylane.com/)
 
