@@ -1,22 +1,26 @@
 ---
 created: 2026-01-28T16:17:27-05:00
-modified: 2026-01-30T20:16:25-05:00
+modified: 2026-01-30T20:43:49-05:00
 date created: 2026-01-28 16:17:27
 date modified: 2026-01-28 16:31:09
 title: Project Introduction
 ---
-## A Node/Network Document System with Web Access and Automatic Incremental Update of an Available LLM System
+## Overview
 
-### Client
-**Name:** John B. Smith (UNC Computer Science, emmeritus)  
-**Contact:** jbs@cs.unc.edu  
+> [!info]- Quick Summary
+> Adding agentic behavior and AI chatbot via Gemini to a data site for a nature preserve.  
 
-### Summary
-- **Quick Summary:** Adding agentic behavior and AI chatbot via Gemini to a data site for a nature preserve.  
-- [Project Specs](http://www.cs.unc.edu/~stotts/COMP523-s26/vids/jbs-2.pdf)  
-#### Details
-This project will work with an extensive Web site that includes information on an existing ecologically significant conservation reserve ([chicorylane.com](http://chicorylane.com/)) and maps it into a dynamic document system to be developed by the project. The doc systerm is a node/network based structure, having nodes that may contain pages of mixed media content that can be accessed through a conventional Web browser.
+We are working with the [ChicoryLane conservation reserve](http://chicorylane.com/)'s website and its data, to map the content into a dynamic document system. 
 
-Nodes will be recursive, in the sense of nodes containing other node structures as content. Innovations will also include an automatic feature to feed data incrementally into some to-be-identified existing LLM system as well as explore techniques for incorporating relational database information (ecological attributes concerning plants in the reserve) into the LLM.
+The system is a node/graph based structure, with nodes that may contain pages of mixed media content accessible through a web browser. Nodes will be recursive, containing other node structures as content. 
 
-Earlier work on several similar data models are available.
+The goal is to extend the previous work, which implemented a **RAG-based chatbot**, and extending it to an **AI platform with agentic capabilities**.
+
+Planned innovations include:
+- An automatic feature to incrementally feed data into the existing LLM system
+- Exploring techniques for incorporating relational database information (like ecological attributes concerning plants in the reserve) into the knowledge base
+- Architectural and cost-based evaluation of development options for a mainstream vertical integration stack
+
+## Initial Project Proposal
+The original project proposal can be found [here](https://www.cs.unc.edu/~stotts/COMP523-s26/cliProps-s2026.html ) at **#6**. The provided specifications document is below.
+![[Proposal Project Specs.pdf]]
