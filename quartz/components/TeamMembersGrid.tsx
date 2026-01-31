@@ -9,7 +9,7 @@ export default (() => {
                 <div class="team-card">
                     <img class="profile" src="https://media.licdn.com/dms/image/v2/D4E03AQGOsMtezdkHQQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728526922914?e=1771459200&v=beta&t=WZy0SEK__BV-tPGqH0UG2fJ0DMneZqu55HOcH2YFOM8" alt="Team Member"/>
                     <div class="team-info">
-                        <h3>Oluwatumininu(Tumi) Oguntola</h3>
+                        <h3>Oluwatumininu (Tumi) Oguntola</h3>
                         <p><strong>Role:</strong> Placeholder Role</p>
                         <p><strong>Email:</strong> oguntola@unc.edu</p>
                         <div class="social-links">
