@@ -1,6 +1,6 @@
 ---
 created: 2026-01-29T19:12:28-05:00
-modified: 2026-01-30T22:01:56-05:00
+modified: 2026-01-30T22:04:07-05:00
 title: Meet The Team
 ---
 
@@ -10,14 +10,13 @@ HTML Team Grid Implemented Via:
   - Import/Export: quartz/components/index.ts
   - ConditionalRender of Component.TeamMembersGrid: ~/quartz.layout.ts
 -->
+## Contacting The Team
+> Apologies for the delay, we are currently in the process of getting a shared mailbox for the team. We will include the email here once we have it.
 
 ## The Client
 **Name:** John B. Smith (UNC Computer Science, Professor Emeritus)
 **Email:** jbs@cs.unc.edu
 **Link:** [https://chicorylane.com/](https://chicorylane.com/)
-
-## Contact
-> Apologies for the delay, we are currently in the process of getting a shared mailbox for the team. We will include the email here once we have it.
 
 ## Team Rules
 ### Team Behaviors
