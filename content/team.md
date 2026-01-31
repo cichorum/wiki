@@ -1,6 +1,6 @@
 ---
 created: 2026-01-29T19:12:28-05:00
-modified: 2026-01-30T15:24:25-05:00
+modified: 2026-01-30T21:03:22-05:00
 title: Meet The Team
 ---
 
@@ -11,6 +11,9 @@ HTML Team Grid Implemented Via:
   - ConditionalRender of Component.TeamMembersGrid: ~/quartz.layout.ts
 -->
 
+
+> [!warn] Team Mailbox
+> Apologies for the delay, we are currently in the process of getting a shared mailbox for the team. We will include the email here once we have it.
 
 ## The Client
 
