@@ -11,10 +11,10 @@ title: Meetings
   - Next meeting: **February 11**
 
 - **Client Meeting**  
-  **TBD** — planned for **early next week [2026-02-02/2026-02-06]**
+  Tentative: Sundays **4:00-4:45pm** (backup 4:45-5:30pm)
+  - Next meeting: **February 15**
 
 - **Weekly Team Meetings**  
   **TBD**
 
-## Recent Meetings
-- [[Meetings/2026-01-28|January 28th, 2026 - Team Meeting]]
+## Recent Meetings:
