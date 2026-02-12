@@ -30,8 +30,19 @@ const defaultOptions: Options = {
     return node
   },
   sortFn: (a, b) => {
-    // Sort order: folders first, then files. Sort folders and files alphabeticall
+    // If both are folders or both are files, sort them
     if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+      const aInMeetings = a.data?.slug.includes("meetings")
+      const bInMeetings = b.data?.slug.includes("meetings")
+
+      if ((!a.isFolder && !b.isFolder) && (aInMeetings && bInMeetings)) {
+        // If both are files in the meetings folder, reverse the sort.
+        return b.displayName.localeCompare(a.displayName, undefined, {
+          numeric: true,
+          sensitivity: "base",
+        })
+      }
+
       // numeric: true: Whether numeric collation should be used, such that "1" < "2" < "10"
       // sensitivity: "base": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A
       return a.displayName.localeCompare(b.displayName, undefined, {
