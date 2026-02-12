@@ -13,10 +13,10 @@ export default (() => {
                         <p><strong>Role:</strong> Oracle of the Infinite (Technical Architect)</p>
                         <p><strong>Email:</strong> oguntola@unc.edu</p>
                         <div class="social-links">
-                            <a href="https://www.linkedin.com/in/tumio/" target="_blank">
+                            <a href="https://www.linkedin.com/in/tumio/" target="_blank" rel="noopener noreferrer">
                                 <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn"/>
                             </a>
-                            <a href="https://github.com/PR0C355" target="_blank">
+                            <a href="https://github.com/PR0C355" target="_blank" rel="noopener noreferrer">
                                 <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub"/>
                             </a>
                         </div>
@@ -30,10 +30,10 @@ export default (() => {
                         <p><strong>Role:</strong> Guardian of The Reserve (Lead Developer)</p>
                         <p><strong>Email:</strong> chandonj@unc.edu</p>
                         <div class="social-links">
-                            <a href="https://www.linkedin.com/in/chandon-jarrett/" target="_blank">
+                            <a href="https://www.linkedin.com/in/chandon-jarrett/" target="_blank" rel="noopener noreferrer">
                                 <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn"/>
                             </a>
-                            <a href="https://github.com/ChandonJarrett" target="_blank">
+                            <a href="https://github.com/ChandonJarrett" target="_blank" rel="noopener noreferrer">
                                 <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub"/>
                             </a>
                         </div>
@@ -47,10 +47,10 @@ export default (() => {
                         <p><strong>Role:</strong> Maîtresse de la Machine (Project Manager)</p>
                         <p><strong>Email:</strong> s3wits@unc.edu</p>
                         <div class="social-links">
-                            <a href="https://www.linkedin.com/in/sarah-threewits-a08840296/" target="_blank">
+                            <a href="https://www.linkedin.com/in/sarah-threewits-a08840296/" target="_blank" rel="noopener noreferrer">
                                 <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn"/>
                             </a>
-                            <a href="https://github.com/sarah3wits" target="_blank">
+                            <a href="https://github.com/sarah3wits" target="_blank" rel="noopener noreferrer">
                                 <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub"/>
                             </a>
                         </div>
@@ -64,7 +64,7 @@ export default (() => {
                         <p><strong>Role:</strong> Agent of Innovation (Solutions Engineer)</p>
                         <p><strong>Email:</strong> csrob@unc.edu</p>
                         <div class="social-links">
-                            <a href="https://github.com/tophersroberts" target="_blank">
+                            <a href="https://github.com/tophersroberts" target="_blank" rel="noopener noreferrer">
                                 <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub"/>
                             </a>
                         </div>
