@@ -24,6 +24,7 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import TeamMembersGrid from "./TeamMembersGrid"
+import GithubSidebarLink from "./GithubSidebarLink"
 
 export {
   ArticleTitle,
@@ -51,5 +52,6 @@ export {
   Comments,
   Flex,
   ConditionalRender,
-  TeamMembersGrid
+  TeamMembersGrid,
+  GithubSidebarLink,
 }
