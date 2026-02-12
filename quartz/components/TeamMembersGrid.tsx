@@ -14,10 +14,10 @@ export default (() => {
                         <p><strong>Email:</strong> oguntola@unc.edu</p>
                         <div class="social-links">
                             <a href="https://www.linkedin.com/in/tumio/" target="_blank">
-                                <img class="white-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn"/>
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn"/>
                             </a>
                             <a href="https://github.com/PR0C355" target="_blank">
-                                <img class="white-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub"/>
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub"/>
                             </a>
                         </div>
                     </div>
@@ -31,10 +31,10 @@ export default (() => {
                         <p><strong>Email:</strong> chandonj@unc.edu</p>
                         <div class="social-links">
                             <a href="https://www.linkedin.com/in/chandon-jarrett/" target="_blank">
-                                <img class="white-icon"src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn"/>
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn"/>
                             </a>
                             <a href="https://github.com/ChandonJarrett" target="_blank">
-                                <img class="white-icon"src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub"/>
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub"/>
                             </a>
                         </div>
                     </div>
@@ -48,10 +48,10 @@ export default (() => {
                         <p><strong>Email:</strong> s3wits@unc.edu</p>
                         <div class="social-links">
                             <a href="https://www.linkedin.com/in/sarah-threewits-a08840296/" target="_blank">
-                                <img class="white-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" fill="white" alt="LinkedIn"/>
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn"/>
                             </a>
                             <a href="https://github.com/sarah3wits" target="_blank">
-                                <img class="white-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub"/>
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub"/>
                             </a>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ export default (() => {
                         <p><strong>Email:</strong> csrob@unc.edu</p>
                         <div class="social-links">
                             <a href="https://github.com/tophersroberts" target="_blank">
-                                <img class="white-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub"/>
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub"/>
                             </a>
                         </div>
                     </div>
@@ -86,11 +86,13 @@ export default (() => {
     .team-card {
         display: flex;
         gap: 1rem;
-        align-items: flex-start;
-        border: 1px solid #4b9cd3;
-        border-radius: 25px;
         padding: 1.25rem;
-        background-color: #202022;
+        align-items: flex-start;
+
+        border: 1px solid var(--gray);
+        border-radius: 25px;
+
+        background-color: var(--light);
     }
 
     .team-card img.profile {
@@ -123,12 +125,19 @@ export default (() => {
     .social-links img {
         width: 35px;
         height: 35px;
-    }
 
-    .white-icon {
-        filter: brightness(0) invert(1);    
+        filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+
+        transition: opacity 0.3s ease, transform 0.2s ease;
+        opacity: 0.7;
+        transform: scale(1);
     }
-  `
+        
+    .social-links img:hover {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+  `;
  
   return TeamMembersGrid
 }) satisfies QuartzComponentConstructor
