@@ -17,7 +17,7 @@ title: Deliverables
 - [x] Project Website
 - [x] Team Rules & Coding Practices
 - [ ] Project Concept
-- [ ] User Stories
+- [x] User Stories
 - [ ] System Metaphor
 - [ ] Platform Selection
 - [ ] Architecture Diagram

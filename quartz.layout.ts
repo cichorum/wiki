@@ -45,6 +45,9 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer(),
+
+    // GITHUB SIDEBAR LINK COMPONENT IMPLEMENTATION
+    Component.GithubSidebarLink(),
   ],
   right: [
     Component.Graph(),
@@ -69,6 +72,9 @@ export const defaultListPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer(),
+
+    // GITHUB SIDEBAR LINK COMPONENT IMPLEMENTATION
+    Component.GithubSidebarLink(),
   ],
   right: [],
 }
