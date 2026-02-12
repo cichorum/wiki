@@ -16,7 +16,3 @@ title: Meetings
 
 - **Weekly Team Meetings**  
 	- **TBD**
-
-## Recent Meetings:
-- [[meetings/2026-02-03|February 3rd, 2026 - Client Project Breakdown]]
-- [[meetings/2026-01-28|January 28th, 2026 - First Meeting]]
