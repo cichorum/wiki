@@ -1,6 +1,6 @@
 ---
 created: 2026-01-28T16:17:27-05:00
-modified: 2026-01-30T22:00:36-05:00
+modified: 2026-02-12T11:41:47-05:00
 date created: 2026-01-28 16:17:27
 date modified: 2026-01-28 16:31:09
 title: Project Introduction
@@ -21,7 +21,7 @@ Planned innovations include:
 - Exploring techniques for incorporating relational database information (like ecological attributes concerning plants in the reserve) into the knowledge base
 - Architectural and cost-based evaluation of development options for a mainstream vertical integration stack
 
-You can contact the team [[team#Contact|here]].
+![[team#Contacting The Team]]
 
 ## Initial Project Proposal
 The original project proposal can be found [here](https://www.cs.unc.edu/~stotts/COMP523-s26/cliProps-s2026.html ) at **#6**. The provided specifications document is below.
