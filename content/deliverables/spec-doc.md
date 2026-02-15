@@ -1,12 +1,12 @@
 ---
 created: 2026-02-06T19:00:52-05:00
-modified: 2026-02-15T15:42:23-05:00
+modified: 2026-02-15T17:26:30-05:00
 title: Specifications Document
 ---
 
 ___
 
-# User Stories
+## User Stories
 
 ### As a Visitor of the Website,
 **I want to clearly understand what the Chicory Lane Conservation Group is, what it does, the events it hosts, and how to access its educational materials.**
@@ -28,60 +28,54 @@ ___
 
 ___
 
-# Requirements
+## Requirements
 
-## Functional
+### Functional
 
-### Definite:
+#### Definite:
 - **The AI Chatbot must use a system prompt and identity, Cichorum, for efficient user-communication.**
 - **The chatbot must be able to access all information on the website.**
 - **Conversations with the chatbot must be stored in a single session**.
 - **The chatbot must have access to the databases in-use by the website**
 - **The application must allow users to download documents from the database**
 
-### Perhaps:
+#### Perhaps:
 - **The chatbot should be available on each page of the website in the toolbar.**
 - **The chatbot should be restricted from communicating outside of website context.**
 
-### Improbable:
+#### Improbable:
 - **Lorem ipsum**
     - dolor sit amet.
+---
+### Non-Functional
 
-
-## Non-functional
-
-### Definite:
+#### Definite:
 - **Website should be maintainable for the client.**
 - **The aesthetics and functionality of the user-interface will be improved.**
 
-### Perhaps:
-- **Chatbot should load responses in <5 seconds.**
+#### Perhaps:
+- **Chatbot should load responses in a reasonable time.**
+- **The chatbot should have visibility in terms of tool/function calls and relevant data.**
 
-### Improbable:
-- **Lorem ipsum**
-    - dolor sit amet.
-## Interfaces
-
-### Definite:
-- **Lorem ipsum**
-    - dolor sit amet.
-- **Lorem ipsum**
-    - dolor sit amet.
+#### Improbable:
 - **Lorem ipsum**
     - dolor sit amet.
 
-### Perhaps:
-- **Lorem ipsum**
-    - dolor sit amet.
-- **Lorem ipsum**
-    - dolor sit amet.
-- **Lorem ipsum**
-    - dolor sit amet.
+---
+### Interfaces
 
-### Improbable:
-- **Lorem ipsum**
-    - dolor sit amet.
-- **Lorem ipsum**
-    - dolor sit amet.
-- **Lorem ipsum**
-    - dolor sit amet.
+- **Web Application (Website)**
+	- Conversational Chatbot Interface
+		- Citations/References
+	- Administrative Interface
+		- Data Ingestion/Document Uploads
+		- Connector/Adapter Controls
+		- Indexing/Re-Indexing
+		- Retrieval Monitoring?
+		- Cost Tracking
+	- Exploration of Reserve Database
+- **API Interface**
+	- Connections to Internal DBs
+	- Connection to LLM Provider API
+	- Retrieval System
+	- Connection to Agent/Observability Platform
