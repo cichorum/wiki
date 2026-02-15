@@ -35,9 +35,12 @@ ___
 #### Definite:
 - **The AI Chatbot must use a system prompt and identity, Cichorum, for efficient user-communication.**
 - **The chatbot must be able to access all information on the website.**
-- **Conversations with the chatbot must be stored in a single session**.
-- **The chatbot must have access to the databases in-use by the website**
-- **The application must allow users to download documents from the database**
+- **Conversations with the chatbot must be stored in a single session.**.
+- **The chatbot must have access to the databases in-use by the website.**
+- **The application must allow users to download documents from the database.**
+- **The chatbot must be able to export conversations to other formats (e.g., pdf).**
+- **The chatbot must have access to the Chicory Lane databases.**
+- **The website must include user authentication.**
 
 #### Perhaps:
 - **The chatbot should be available on each page of the website in the toolbar.**
@@ -45,13 +48,15 @@ ___
 
 #### Improbable:
 - **Lorem ipsum**
-    - dolor sit amet.
+    - **The chatbot might include voice interaction.**
+	- **The chatbot might include AI image reading.**
 ---
 ### Non-Functional
 
 #### Definite:
 - **Website should be maintainable for the client.**
 - **The aesthetics and functionality of the user-interface will be improved.**
+- **The existing features of the website must be preserved.**
 
 #### Perhaps:
 - **Chatbot should load responses in a reasonable time.**
