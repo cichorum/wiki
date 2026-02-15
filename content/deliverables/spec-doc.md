@@ -1,6 +1,6 @@
 ---
 created: 2026-02-06T19:00:52-05:00
-modified: 2026-02-12T18:54:42-05:00
+modified: 2026-02-15T15:42:23-05:00
 title: Specifications Document
 ---
 
@@ -14,13 +14,13 @@ ___
 - I want content to be organized logically and presented in a clear, easy to follow manner.
 - I want important information (mission, programs, events, resources) to be immediately visible and well explained.
 
-### As an Ecologist or Conservation Professional, 
+### As an Ecologist or Conservation Professional,
 **I want to quickly find and access documents, research materials, and reference resources.**
 - I want resources to be stored in well-defined, intuitive locations across the site.
 - I want the ability to download documents and datasets with minimal time-wasted.
 - I want access to an AI-powered chatbot that can answer questions about site content and reference materials available in the database.
 
-### As the Website Administrator, 
+### As the Website Administrator,
 **I want the site to be well-structured and scalable to support future growth.**
 - I want to add and update pages efficiently without extensive technical overhead.
 - I want the codebase to be clear, well-organized, and approachable for future maintainers.
@@ -33,26 +33,17 @@ ___
 ## Functional
 
 ### Definite:
-- **Lorem ipsum**
-    - dolor sit amet.
-- **Lorem ipsum**
-    - dolor sit amet.
-- **Lorem ipsum**
-    - dolor sit amet.
+- **The AI Chatbot must use a system prompt and identity, Cichorum, for efficient user-communication.**
+- **The chatbot must be able to access all information on the website.**
+- **Conversations with the chatbot must be stored in a single session**.
+- **The chatbot must have access to the databases in-use by the website**
+- **The application must allow users to download documents from the database**
 
 ### Perhaps:
-- **Lorem ipsum**
-    - dolor sit amet.
-- **Lorem ipsum**
-    - dolor sit amet.
-- **Lorem ipsum**
-    - dolor sit amet.
+- **The chatbot should be available on each page of the website in the toolbar.**
+- **The chatbot should be restricted from communicating outside of website context.**
 
 ### Improbable:
-- **Lorem ipsum**
-    - dolor sit amet.
-- **Lorem ipsum**
-    - dolor sit amet.
 - **Lorem ipsum**
     - dolor sit amet.
 
@@ -60,30 +51,15 @@ ___
 ## Non-functional
 
 ### Definite:
-- **Lorem ipsum**
-    - dolor sit amet.
-- **Lorem ipsum**
-    - dolor sit amet.
-- **Lorem ipsum**
-    - dolor sit amet.
+- **Website should be maintainable for the client.**
+- **The aesthetics and functionality of the user-interface will be improved.**
 
 ### Perhaps:
-- **Lorem ipsum**
-    - dolor sit amet.
-- **Lorem ipsum**
-    - dolor sit amet.
-- **Lorem ipsum**
-    - dolor sit amet.
+- **Chatbot should load responses in <5 seconds.**
 
 ### Improbable:
 - **Lorem ipsum**
     - dolor sit amet.
-- **Lorem ipsum**
-    - dolor sit amet.
-- **Lorem ipsum**
-    - dolor sit amet.
-
-
 ## Interfaces
 
 ### Definite:
