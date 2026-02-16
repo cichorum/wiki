@@ -1,6 +1,6 @@
 ---
 created: 2026-02-06T19:00:52-05:00
-modified: 2026-02-15T17:26:30-05:00
+modified: 2026-02-16T11:30:20-05:00
 title: Specifications Document
 ---
 
@@ -47,9 +47,8 @@ ___
 - **The chatbot should be restricted from communicating outside of website context.**
 
 #### Improbable:
-- **Lorem ipsum**
-    - **The chatbot might include voice interaction.**
-	- **The chatbot might include AI image reading.**
+- **The chatbot might include voice interaction.**
+- **The chatbot might include AI image reading.**
 ---
 ### Non-Functional
 
@@ -63,8 +62,7 @@ ___
 - **The chatbot should have visibility in terms of tool/function calls and relevant data.**
 
 #### Improbable:
-- **Lorem ipsum**
-    - dolor sit amet.
+- **The chatbot should operate like a personal AI assistant for the Chicory Lane organization, similar to [OpenClaw](https://github.com/openclaw/openclaw)**.
 
 ---
 ### Interfaces
