@@ -1,6 +1,6 @@
 ---
 created: 2026-01-29T19:12:28-05:00
-modified: 2026-01-30T22:04:07-05:00
+modified: 2026-02-12T11:59:25-05:00
 title: Meet The Team
 ---
 
@@ -11,7 +11,11 @@ HTML Team Grid Implemented Via:
   - ConditionalRender of Component.TeamMembersGrid: ~/quartz.layout.ts
 -->
 ## Contacting The Team
-> Apologies for the delay, we are currently in the process of getting a shared mailbox for the team. We will include the email here once we have it.
+You can contact the team by emailing our shared mailbox at:
+	
+> [cichorum@unc.edu](mailto:cichorum@unc.edu). 
+
+A member of the team will respond to you, or will defer to another member that might be better suited to handle your request.
 
 ## The Client
 **Name:** John B. Smith (UNC Computer Science, Professor Emeritus)
