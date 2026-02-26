@@ -32,8 +32,8 @@ const defaultOptions: Options = {
   sortFn: (a, b) => {
     // If both are folders or both are files, sort them
     if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
-      const aInMeetings = a.data?.slug.includes("meetings")
-      const bInMeetings = b.data?.slug.includes("meetings")
+      const aInMeetings = a.data?.slug.includes("meetings") || a.data?.slug.includes("progress-reports")
+      const bInMeetings = b.data?.slug.includes("meetings") || b.data?.slug.includes("progress-reports")
 
       if ((!a.isFolder && !b.isFolder) && (aInMeetings && bInMeetings)) {
         // If both are files in the meetings folder, reverse the sort.
