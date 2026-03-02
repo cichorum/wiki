@@ -1,6 +1,6 @@
 ---
 created: 2026-02-16T13:31:49-05:00
-modified: 2026-02-20T20:13:29-05:00
+modified: 2026-03-02T16:42:04-05:00
 title: Architecture Diagram
 ---
 ## Application Architecture
@@ -23,79 +23,153 @@ title: Architecture Diagram
 
 graph TB
 
+  
+
 subgraph UserClient["User Client"]
-    Browser["Web Browser"]
+
+Browser["Web Browser"]
+
 end
+
+  
 
 subgraph Frontend["Frontend"]
-    HTMX["HTMX<br/>HTML Attributes"]
-    Templates["Blade Templates"]
-    Static["Static Assets"]
+
+HTMX["HTMX<br/>HTML Attributes"]
+
+Templates["Blade Templates"]
+
+Static["Static Assets"]
+
 end
+
+  
 
 subgraph Backend["Backend"]
-    WebApp["Laravel Web Application"]
-    BusinessLogic["Business Logic<br/>Data Operations"]
+
+WebApp["Laravel Web Application"]
+
+StandardLogic["User Operations<br/>& Authentication"]
+
 end
+
+  
 
 subgraph ChatBot["Agentic Chat Interface"]
-    AIAPI["FastAPI Service"]
-    Chatbot["Chatbot Engine<br/>Agentic Execution"]
-    RAG["RAG Pipeline<br/>Retrieval + Generation"]
+
+AIAPI["FastAPI Service"]
+
+AgentOrchestrator["Agent<br/>Orchestrator"]
+
+AgentFleet["Sub-Agents"]
+
+RAG["RAG Pipeline<br/>Retrieval + Generation"]
+
 end
+
+  
 
 subgraph DataStorage["Data Storage"]
-    RelationalDB[("Relational Database<br/>Users, Plants, Observations")]
-    VectorDB[("Vector Database<br/>Embeddings")]
+
+RelationalDB[("Relational Database<br/>Users, Plants, Observations")]
+
+VectorDB[("Graph Database<br/>w/ Embeddings")]
+
 end
+
+  
 
 subgraph ContentSources["Content Sources"]
-    Documents["Articles & Research Papers"]
-    LegacyData["Legacy Data"]
-    Images["Media Files<br/>Images / Documents"]
+
+Documents["Articles & Important Documents"]
+
+WebsiteContent["Website Pages"]
+
+Images["Media Files<br/>& Images"]
+
 end
+
+  
 
 subgraph ExternalAPIs["External APIs"]
-    LLM["LLM Provider"]
-    Maps["Google Maps API"]
-    EBird["eBird API"]
+
+LLM["LLM Provider"]
+
+Maps["Google Maps API"]
+
+EBird["eBird API"]
+
 end
 
+  
+
 Browser -->|Request| Frontend
+
 Frontend -->|Server Request| Backend
+
 Backend -->|Response| Frontend
+
 Frontend -->|Update Page| Browser
 
+  
+  
 
-WebApp -->|Data Query| BusinessLogic
-BusinessLogic -->|DB Read/Write| RelationalDB
+WebApp <-- "Chat Exchange" --> AIAPI
 
+WebApp -->|Data Query| StandardLogic
 
-AIAPI -->|Process Request| Chatbot
-Chatbot -->|Retrieve Context| RAG
-RAG -->|Vector Search| VectorDB
-RAG -->|DB Query| RelationalDB
-RAG -->|Generate| LLM
-Chatbot <-- "Chat Exchange" --> WebApp
+StandardLogic -->|DB Read/Write| RelationalDB
 
+  
+  
+
+AIAPI -->|Process Chat Requests| AgentOrchestrator
+
+AgentFleet -->|Retrieve Relevant Context| RAG
+
+AgentFleet -->|Retrieve Results| AgentOrchestrator
+
+AgentOrchestrator-->|Assign Work|AgentFleet
+
+RAG <-->|Vector Search| VectorDB
+
+AgentFleet <-->|Query DB| RelationalDB
+
+AgentFleet <-->|Generate Response| LLM
+
+AgentFleet <-->|Query APIs| ExternalAPIs
+
+  
+  
+  
 
 Documents -->|Parse| AIAPI
 
+  
+  
 
-BusinessLogic -->|Bird Data| EBird
+StandardLogic -->|Access Bird Data| EBird
+
 Templates <-->|Map Data| Maps
 
+  
+  
 
 classDef accent fill:#4B9CD3,color:#FFFFFF,stroke:#13294B;
 
+  
+
 class Browser neutral;
+
 class HTMX,Templates,Static neutral;
-class WebApp,BusinessLogic neutral;
-class AIAPI,Chatbot,RAG neutral;
+
+class WebApp,StandardLogic neutral;
+
+class AIAPI,AgentOrchestrator,RAG neutral;
+
 class RelationalDB,VectorDB neutral;
-class Documents,LegacyData,Images neutral;
+
+class Documents,WebsiteContent,Images neutral;
+
 class LLM,Maps,EBird neutral;
-
 ```
-
-> See our [[deliverables/platform-select|Platform Selection]] page for the motivations on our platform choices.
