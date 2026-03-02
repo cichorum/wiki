@@ -173,3 +173,4 @@ class Documents,WebsiteContent,Images neutral;
 
 class LLM,Maps,EBird neutral;
 ```
+> See our [[deliverables/platform-select|Platform Selection]] page for the motivations on our platform choices.
