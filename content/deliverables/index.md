@@ -1,14 +1,14 @@
 ---
 created: 2026-02-06T19:06:55-05:00
-modified: 2026-02-17T18:13:58-05:00
+modified: 2026-04-12T19:47:42-04:00
 title: Deliverables
 ---
 
 ## Formal Deliverables
 
-- [ ] Specifications Document
+- [x] [[deliverables/spec-doc|Specifications Document]]
 - [ ] Design Document
-- [ ] Test Plan
+- [x] [[deliverables/test-plan|Test Plan]]
 - [ ] User Manual
 - [ ] The Code
 
@@ -18,9 +18,9 @@ title: Deliverables
 - [x] Team Rules & Coding Practices
 - [ ] Project Concept
 - [x] User Stories
-- [ ] System Metaphor
-- [ ] Platform Selection
-- [ ] Architecture Diagram
+- [x] [[deliverables/system-metaphor|System Metaphor]]
+- [x] [[deliverables/platform-select|Platform Selection]]
+- [x] [[deliverables/arch-diag|Architecture Diagram]]
 - [ ] Client Hand-off Plan
 
 
