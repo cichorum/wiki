@@ -1,25 +1,23 @@
 ---
 created: 2026-01-28T16:17:27-05:00
 modified: 2026-02-12T11:41:47-05:00
-date created: 2026-01-28 16:17:27
-date modified: 2026-01-28 16:31:09
 title: Project Introduction
 ---
 ## Overview
 
 > [!info]- Quick Summary
-> Adding agentic behavior and AI chatbot via Gemini to a data site for a nature preserve.  
+> A Laravel 12 web application and agentic GraphRAG microservice for the ChicoryLane ecological reserve, combining a public-facing nature site with an authenticated dashboard for managing ecological records and an intelligent AI query interface.  
 
-We are working with the [ChicoryLane conservation reserve](http://chicorylane.com/)'s website and its data, to map the content into a dynamic document system. 
+Working with the [ChicoryLane ecological reserve's current website](http://chicorylane.com/), we built a brand new full-stack system for the ChicoryLane conservation reserve. The application serves a public site via server-rendered Blade templates and an authenticated dashboard for managing ecological data (taxa, observations, areas, media, services, and events). Navigation and dashboard interactions are progressively enhanced with HTMX, keeping the UI server-driven without becoming a SPA.
 
-The system is a node/graph based structure, with nodes that may contain pages of mixed media content accessible through a web browser. Nodes will be recursive, containing other node structures as content. 
+The core innovation is a GraphRAG microservice that implements an agentic knowledge base over a Neo4j graph. It ingests records from the database and all content from the website and exposes an intelligent query interface via a LangGraph agent. The agent selects from three specialized tools at runtime: SQL lookup, semantic vector search, and graph traversal to answer any questions about the reserve.
 
-The goal is to extend the previous work, which implemented a **RAG-based chatbot**, and extending it to an **AI platform with agentic capabilities**.
-
-Planned innovations include:
-- An automatic feature to incrementally feed data into the existing LLM system
-- Exploring techniques for incorporating relational database information (like ecological attributes concerning plants in the reserve) into the knowledge base
-- Architectural and cost-based evaluation of development options for a mainstream vertical integration stack
+**Key components of what was delivered:**
+- Laravel 12 app with MySQL as the primary data store, Blade + HTMX for the UI, and role-based access (user/admin) for dashboard features
+- Neo4j knowledge graph populated from both structured database records and LLM-extracted entities from HTML content
+- LangGraph agent backed by an OpenAI LLM
+- GeoJSON/tile map layer served from public/ for spatial data about the reserve
+- eBird API integration for bird observation data ingestion
 
 ![[team#Contacting The Team]]
 
