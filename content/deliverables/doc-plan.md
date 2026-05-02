@@ -1,21 +1,23 @@
 ---
+created: 2026-04-23T01:02:51-04:00
+modified: 2026-05-01T21:14:29-04:00
 title: Documentation Plan
 ---
 ## Users & Needs
 
-### Public visitor (low–medium) 
+### Public Visitor (low–medium)
 
 These users need to understand the purpose of the site, be able to move through the interface easily, and use the map feature. Since public visitors are likely just browsing, they will primarily need simple guidance rather than long written instructions.
 
-### Signed-in user (medium)
+### Signed-in User (medium)
 
 These users will need help understanding account basics like account creation and login, as well as understanding how to use the dashboard and view data. They will need a short user guide and in-app help on important pages.
 
-### In-app admin (medium–high) 
+### In-app Admin (medium–high)
 
 These users need to manage data, understand permissions and roles, and follow the correct conventions. Since they are working directly with system data, they need more detailed documentation with workflow-based instructions. 
 
-### System admin (high) 
+### System Admin (high)
 
 These users are responsible for deploying, configuring, and maintaining the system. They need in-depth documentation on setup, services, Docker requirements, troubleshooting, security, and admin account setup. 
 
@@ -53,11 +55,11 @@ The Agent Guide will be for engineers and future developers. It will describe ho
 
 Our main documentation will be stored in the repository as Markdown files, including the README and separate guides for users, admins, and engineers. This will keep the documentation version-controlled and easy to update alongside the project.
 
-### Secondary: In-app help
+### Secondary: In-app Help
 
 We will also include help directly in the application in the form of tooltips, form hints, short explanations on pages, and clear validation or error messages. This is especially useful for public and signed-in users.
 
-### Other methods
+### Other Methods
 
 If needed, we may include the following resources for whatever users may need:
 
